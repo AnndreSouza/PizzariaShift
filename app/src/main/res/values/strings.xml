@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Pizzaria</string>
+    <string name="btn_mussa">Mussarela</string>
+    <string name="btn_calabresa">Calabresa</string>
+    <string name="btn_portu">Portuguesa</string>
+    <string name="chk_borda">Borda recheada</string>
+    <string name="btn_calcular">Calcular</string>
+    <string name="txt_valor" />
+    <string name="btn_finalizaPedido">finalizar pedido</string>
+    <string-array name="formas_pagamento">
+        <item>Cartão de Credito</item>
+        <item>VR</item>
+        <item>Dinheiro</item>
+        <item>Boleto</item>
+    </string-array>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pizza"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.fiap.pizzaria.PizzaActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:id="@+id/IDgroupRadio">
+
+            <RadioButton
+                android:text="@string/btn_mussa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/IDradioMussa" />
+
+            <RadioButton
+                android:text="@string/btn_calabresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/IDradioCala" />
+
+            <RadioButton
+                android:text="@string/btn_portu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/IDradioPortuga" />
+        </RadioGroup>
+
+        <CheckBox
+            android:text="@string/chk_borda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/IDcheckBorda" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/IDspinner"
+            android:entries="@array/formas_pagamento" />
+
+        <Button
+            android:text="@string/btn_calcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/IDcalcular"
+            android:onClick="calcular" />
+
+        <TextView
+            android:text="@string/txt_valor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/IDtextValor"
+            android:textAlignment="center" />
+    </LinearLayout>
+</RelativeLayout>
